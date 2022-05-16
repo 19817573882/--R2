@@ -1,0 +1,49 @@
+练习3-1
+> class(Inf）#用class（）查找变量的类
+[1] "numeric"
+> class(NA)
+[1] "logical"
+> class(NaN)
+[1] "numeric"
+> class("")
+[1] "character"
+> typeof(Inf)#用typeof（）查找变量的类型
+[1] "double"
+> typeof(NA)
+[1] "logical"
+> typeof(NaN)
+[1] "double"
+> typeof("")
+[1] "character"
+> mode(Inf)#用mode（）查找变量的模式
+[1] "numeric"
+> mode(NA)
+[1] "logical"
+> mode(NaN)
+[1] "numeric"
+> mode("")
+[1] "character"
+> storage.mode(Inf)#用storage.mode()查找变量的储存模式
+[1] "double"
+> storage.mode(NA)
+[1] "logical"
+> storage.mode(NaN)
+[1] "double"
+> storage.mode("")
+[1] "character"
+
+练习3-2
+> pets<-factor(sample(c("dog","cat","hamster","goldfish"),100,replace = TRUE))#随机从“dog”、“cat”、“hamster”和 “goldfish”中以相等的概率生成100个宠物名
+> head(pets)#显示所得变量的前几个值
+[1] cat      dog      hamster  dog      goldfish hamster 
+Levels: cat dog goldfish hamster
+> summary(pets)计算每种宠物的数量
+     cat      dog goldfish  hamster 
+      23       21       23       33 
+      
+练习3-3
+> apple<-1
+> banana<-2
+> orang<-3 #创建一些以水果命名的变量
+> ls(pattern = "a") #列出所有包含“a”的变量
+[1] "apple"  "banana" "name"   "orang
