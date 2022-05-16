@@ -47,3 +47,11 @@ Levels: cat dog goldfish hamster
 > orang<-3 #创建一些以水果命名的变量
 > ls(pattern = "a") #列出所有包含“a”的变量
 [1] "apple"  "banana" "name"   "orang
+
+练习4-1
+> n<-seq_len(50)
+> 三角形数<-n * (n + 1) / 2
+> names(三角形数)<-letters[1:15]
+> 三角形数[c("a","e","i","o","u")]
+   a    e    i    o <NA> 
+   1   15   45  120   NA
